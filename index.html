@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,100;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <title>Thaysa Zooby</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" width="40px">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/thaysazooby">GitHub</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/thaysazooby">LinkedIn</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:thaysa.zooby@gmail.com">email</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Thaysa Zooby</h1> <br>
+                <h5>Estudante de desenvolvimento Fullstack</h5> <br>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-square-caret-down"></i>
+            </div>
+
+            <div style="display: none" id="about">
+                <p>
+                    <strong> Hello, que bom te encontrar aqui passeando pelo meu primeiro projeto!</strong> <br> Esse e o produto que eu criei ao embarcar nesse transito para a area de programacao. Minha formacao inicial e em Comunicacao Social, com uma especializacao em Direitos Humanos. Trago comigo essa bagagem para desbravar os caminhos extraordinarios que me tornarao uma pessoa desenvolvedora. Atualmente fui selecionada e faco parte do projeto <strong> <em> Hiring Coders #3 </em> </strong>, oferecido pela VTEX e pela Gama Academy. Vamo nessa!
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :]">
+                    <button>enviar</button>
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(64, 38, 112);
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(tech.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+    border-right: solid 2px;
+    color: whitesmoke;
+}
+
+header ul li:first-child {
+    border-left: solid 2px;
+     color: whitesmoke;
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: whitesmoke
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 50px;
+
+}
+
+.container .name h5 {
+    font-size: 20px;
+}
+
+#arrow {
+    font-size: 20px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: whitesmoke;
+    background-color: rgba(60, 2, 61, 0.404);
+    font-size: 14px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+}
+
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    border: double thick;
+    color: whitesmoke;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, black 50%, rgb(64, 38, 112) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: whitesmoke;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color:whitesmoke
+}
+
+@media only screen and (max-width: 768px) {
+     .form {
+         width: 100%;
+     }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 15px;
+    }
+    .container .name h1 {
+        font-size: 15px;
+    }
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+}
